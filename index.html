@@ -7,6 +7,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio | Tailwind CSS</title>
   <link rel="stylesheet" href="dist/output.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    .myPortfolioSwiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .myPortfolioSwiper .swiper-slide {
+      width: 350px;
+    }
+  </style>
   <!-- <link href="dist/css/final.css" rel="stylesheet" /> -->
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -206,57 +222,174 @@
           <h4 class="mb-2 text-lg font-semibold text-primary">Pengelaman</h4>
           <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Web Developer</h2>
           <p class="text-md font-medium text-secondary md:text-lg">
-            Saya mempunyai pengalaman mengenai web developer kurang lebih dari 2 tahun, berikut ini hasil dari
-            pengalaman saya berupa project pribadi maupun dari magang
+            Saya mempunyai pengalaman mengenai web developer kurang lebih dari 3 tahun, berikut ini hasil dari
+            pengalaman saya berupa project pribadi maupun dari pekerjaan
           </p>
         </div>
       </div>
 
-      <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-        <div class="mb-12 p-4 md:w-1/2">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <img src="dist/img/portfolio/mrxss.png" alt="Landing Page" width="w-full" />
+      
+
+      <!-- <div class="swiper myPortfolioSwiper py-10"> -->
+      <div class="swiper myPortfolioSwiper">
+        <div class="swiper-wrapper">
+
+          <!-- SLIDE 1 -->
+          <div class="swiper-slide max-w-md">
+            <div
+              class="overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-800 transition duration-500 hover:-translate-y-2">
+
+              <img
+                src="dist/img/portfolio/mrxss.png"
+                alt="Top Up Games"
+                class="h-64 w-full object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="mb-3 text-2xl font-bold text-dark dark:text-white">
+                  Aplikasi Top Up Games
+                </h3>
+
+                <p class="mb-4 text-base text-secondary">
+                  Platform top up games dengan integrasi Midtrans dan VIP Reseller API menggunakan Laravel & MySQL.
+                </p>
+
+                <a
+                  href="https://mrxnunu.com/"
+                  target="_blank"
+                  class="font-semibold text-sky-500 hover:underline"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
           </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Aplikasi Top Up Diamond Games</h3>
-          <p class="text-base font-medium text-secondary">Membuat aplikasi top up games denga Terintegrasi API Payment
-            gateway dan API VIPayment, teknologi yang di gunakan Laravel & mysql. Berikut ini demo dari aplikasi top up
-            games
-            <a href="https://mrxnunu.com/" target="_blank" class="font-bold text-sky-500">mrxnunu top up</a>
-          </p>
-        </div>
-        <div class="mb-12 p-4 md:w-1/2">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <img src="dist/img/portfolio/tracerstudy.png" alt="E-Commerce" width="w-full" />
+
+          <!-- SLIDE 2 -->
+          <div class="swiper-slide max-w-md">
+            <div
+              class="overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-800 transition duration-500 hover:-translate-y-2">
+
+              <img
+                src="dist/img/portfolio/tracerstudy.png"
+                alt="Tracer Study"
+                class="h-64 w-full object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="mb-3 text-2xl font-bold text-dark dark:text-white">
+                  Aplikasi Tracer Study
+                </h3>
+
+                <p class="text-base text-secondary">
+                  Sistem tracer study universitas dengan fitur kuisioner alumni berbasis Laravel.
+                </p>
+
+                <a
+                  href="https://tracer.ubharajaya.ac.id/"
+                  target="_blank"
+                  class="font-semibold text-sky-500 hover:underline"
+                >
+                  Live Demo →
+              </div>
+            </div>
           </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Aplikasi tracer-study</h3>
-          <p class="text-base font-medium text-secondary">Membuat Aplikasi Tracer Study Universitas Bhyangkara Jakarta
-            Raya, dengan fitur kuisioner</p>
-        </div>
-        <div class="mb-12 p-4 md:w-1/2">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <a href="https://landing-page-heylaw.vercel.app/" target="_blank">
-              <img src="dist/img/portfolio/heylaw.png" alt="Technical Documentation" width="w-full" />
-            </a>
+
+          <!-- SLIDE 3 -->
+          <div class="swiper-slide max-w-md">
+            <div
+              class="overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-800 transition duration-500 hover:-translate-y-2">
+
+              <img
+                src="dist/img/portfolio/heylaw.png"
+                alt="Heylaw"
+                class="h-64 w-full object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="mb-3 text-2xl font-bold text-dark dark:text-white">
+                  Heylaw Landing Page
+                </h3>
+
+                <p class="mb-4 text-base text-secondary">
+                  Project slicing frontend menggunakan Next.js dan Tailwind CSS.
+                </p>
+
+                <a
+                  href="https://landing-page-heylaw.vercel.app/"
+                  target="_blank"
+                  class="font-semibold text-sky-500 hover:underline"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
           </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Magang Heylaw.id</h3>
-          <p class="text-base font-medium text-secondary">Ini hasil project slicing front end dari magang saya
-            Menggunakan Next.js dan Tailwind Css,Walaupun Masih Belum Responsive,berikut demo tampilan hasil dari magang
-            saya <a href="https://landing-page-heylaw.vercel.app/" target="_blank"
-              class="font-bold text-sky-500">landing-page-heylaw</a></p>
-        </div>
-        <div class="mb-12 p-4 md:w-1/2">
-          <div class="overflow-hidden rounded-md shadow-md">
-            <a href="https://ibnumahjub.github.io/UndanganDigital/" target="_blank">
-              <img src="dist/img/portfolio/undangan.png" alt="Tribute Page" width="w-full" />
-            </a>
+
+          <!-- SLIDE 4 -->
+          <div class="swiper-slide max-w-md">
+            <div
+              class="overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-800 transition duration-500 hover:-translate-y-2">
+
+              <img
+                src="dist/img/portfolio/undangan.png"
+                alt="Undangan Digital"
+                class="h-64 w-full object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="mb-3 text-2xl font-bold text-dark dark:text-white">
+                  Undangan Digital
+                </h3>
+
+                <p class="mb-4 text-base text-secondary">
+                  Website undangan digital responsive menggunakan Tailwind CSS.
+                </p>
+
+                <a
+                  href="https://ibnumahjub.github.io/UndanganDigital/"
+                  target="_blank"
+                  class="font-semibold text-sky-500 hover:underline"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
           </div>
-          <h3 class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white">Undangan Digital</h3>
-          <p class="text-base font-medium text-secondary">Saya membuat Undangan Digital menggunakan tailwind css,
-            Berikut Link Demo <a href="https://ibnumahjub.github.io/UndanganDigital/" target="_blank"
-              class="font-bold text-sky-500">Undangan
-              Fanny & Claude</a>
-          </p>
+          <div class="swiper-slide max-w-md">
+            <div
+              class="overflow-hidden rounded-2xl bg-white shadow-2xl dark:bg-slate-800 transition duration-500 hover:-translate-y-2">
+
+              <img
+                src="dist/img/portfolio/mpp.webp"
+                alt="Undangan Digital"
+                class="h-64 w-full object-cover"
+              />
+
+              <div class="p-6">
+                <h3 class="mb-3 text-2xl font-bold text-dark dark:text-white">
+                  MPPKRI
+                </h3>
+
+                <p class="mb-4 text-base text-secondary">
+                  Sistem layanan terpadu berbasis digital dan fisik yang diselenggarakan oleh Kejaksaan Agung untuk memudahkan masyarakat mengakses layanan hukum dan informasi tanpa harus datang langsung ke kantor kejaksaan
+                </p>
+
+                <a
+                  href="https://mpp2.kejaksaan.info/"
+                  target="_blank"
+                  class="font-semibold text-sky-500 hover:underline"
+                >
+                  Live Demo →
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <!-- PAGINATION -->
+        <div class="swiper-pagination mt-10"></div>
       </div>
     </div>
   </section>
@@ -291,112 +424,6 @@
       </div>
     </div>
   </section>
-  <!-- Clients Section End -->
-
-  <!-- Blog Section Start -->
-  <!-- <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="mx-auto mb-16 max-w-xl text-center">
-          <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
-          <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nisi quisquam perspiciatis blanditiis dolores?</p>
-        </div>
-      </div>
-
-      <div class="flex flex-wrap">
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-            <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full" />
-            <div class="py-8 px-6">
-              <h3>
-                <a href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Tips
-                  Belajar Programming</a>
-              </h3>
-              <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Placeat officia beatae quisquam?</p>
-              <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca
-                Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-            <img src="https://source.unsplash.com/360x200?programing+desain" alt="Mechanical Keyboard" class="w-full" />
-            <div class="py-8 px-6">
-              <h3>
-                <a href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Mempercepat
-                  Belajar css</a>
-              </h3>
-              <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing
-                elit. Modi facilis illum in.</p>
-              <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca
-                Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-          <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
-            <img src="https://source.unsplash.com/360x200?coffee" alt="Coffee" class="w-full" />
-            <div class="py-8 px-6">
-              <h3>
-                <a href="#"
-                  class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white">Menikmati
-                  Secangkir Kopi</a>
-              </h3>
-              <p class="mb-6 text-base font-medium text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Impedit, totam ipsum ea quam sequi velit sunt.</p>
-              <a href="#" class="rounded-lg bg-primary py-2 px-4 text-sm font-medium text-white hover:opacity-80">Baca
-                Selengkapnya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- Blog Section End -->
-
-  <!-- Contact Section Start -->
-  <!-- <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
-    <div class="container">
-      <div class="w-full px-4">
-        <div class="mx-auto mb-16 max-w-xl text-center">
-          <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-          <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
-          <p class="text-md font-medium text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Blanditiis, sed.</p>
-        </div>
-      </div>
-
-      <form>
-        <div class="w-full lg:mx-auto lg:w-2/3">
-          <div class="mb-8 w-full px-4">
-            <label for="name" class="text-base font-bold text-primary">Nama</label>
-            <input type="text" id="name"
-              class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
-          </div>
-          <div class="mb-8 w-full px-4">
-            <label for="email" class="text-base font-bold text-primary">Email</label>
-            <input type="email" id="email"
-              class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
-          </div>
-          <div class="mb-8 w-full px-4">
-            <label for="message" class="text-base font-bold text-primary">Pesan</label>
-            <textarea type="email" id="email"
-              class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
-          </div>
-          <div class="w-full px-4">
-            <button type="submit"
-              class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </section> -->
-  <!-- Contact Section End -->
 
   <!-- Footer Start -->
   <footer class="bg-dark pt-24 pb-12">
@@ -527,6 +554,42 @@
   <!-- Back to top End -->
 
   <script src="dist/js/script.js"></script>
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".myPortfolioSwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+
+      // INI YANG BIKIN BISA DRAG
+      simulateTouch: true,
+      allowTouchMove: true,
+
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+        scale: 0.9,
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
 </body>
 
 </html>
